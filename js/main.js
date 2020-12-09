@@ -30,5 +30,5 @@ function caesarEncrypt(str, num) { // plaintext, key
   return ciphertext; // returns encrypted string
 }
 
-const test = caesarEncrypt("Enter text here", 3); // enter plaintext, key
+const test = caesarEncrypt("Enter text here", 26); // enter plaintext, key
 console.log(test); // logs ciphertext to console
