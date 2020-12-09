@@ -3,11 +3,11 @@
 function caesarEncrypt(str, num) { // plaintext, key
   str = str.toUpperCase(); // converts plaintext to uppercase letters
   str = str.replace(/[^A-Z]/g, "") // removes non-desired ASCII characters
-  var ciphertext = ""; // initializes empty string for ciphertext
+  let ciphertext = ""; // initializes empty string for ciphertext
   
-  for (var i = 0; i < str.length; i++) {
-    var currentChar = str[i]; // grabs each character iteration
-    asciiChar = currentChar.charCodeAt(); // converts letter to ASCII decimal
+  for (let i = 0; i < str.length; i++) {
+    let currentChar = str[i]; // grabs each character iteration
+    let asciiChar = currentChar.charCodeAt(); // converts letter to ASCII decimal
 
     asciiChar += num; // transposes ASCII decimal with value of key
     
@@ -22,7 +22,7 @@ function caesarEncrypt(str, num) { // plaintext, key
       asciiChar = asciiChar;
     }
 
-    encodedChar = String.fromCharCode(asciiChar); // converts ASCII back to letter   
+    let encodedChar = String.fromCharCode(asciiChar); // converts ASCII back to letter   
     ciphertext += encodedChar; // appends letter to ciphertext string
   }
   
@@ -30,5 +30,5 @@ function caesarEncrypt(str, num) { // plaintext, key
   return ciphertext; // returns encrypted string
 }
 
-var test = caesarEncrypt("Enter text here", 3); // enter plaintext, key
+const test = caesarEncrypt("Enter text here", 3); // enter plaintext, key
 console.log(test); // logs ciphertext to console
