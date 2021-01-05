@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caesar cipher</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <meta charset="UTF-8"/>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <div class="caesar-title">
+        <h1>CAESAR CIPHER</h1>
+      </div>
+
+      <div class="caesar-plaintext">
+        <textarea
+          name=""
+          id="plaintext"
+          cols="30"
+          rows="5"
+          placeholder="Enter message..."
+        ></textarea>
+      </div>
+
+      <div class="caesar-key">
+        <input type="password" id="key" name="key" placeholder="Enter key..."/>
+      </div>
+
+      <div class="caesar-encrypt">
+        <input type="button" id="encrypt" value="Encrypt" onclick="caesar()"/>
+      </div>
+
+      <div class="caesar-ciphertext">
+        <textarea
+          name=""
+          id="ciphertext"
+          cols="30"
+          rows="5"
+          placeholder="Ciphertext..."
+        ></textarea>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
