@@ -1,6 +1,6 @@
-Caesar Cipher
+Caesar cipher
 
-As a newbie to the language, this Caesar cipher implementation is my greatest achievement in JavaScript so far.
+As a newbie to the language, this Caesar cipher implementation is my greatest achievement in JavaScript to date.
 
 https://en.wikipedia.org/wiki/Caesar_cipher
 
